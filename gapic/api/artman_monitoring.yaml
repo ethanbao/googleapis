@@ -1,11 +1,11 @@
 common:
-  api_name: monitoring-v3
+  api_name: google-monitoring-v3
   import_proto_path:
     - ${REPOROOT}/googleapis
   src_proto_path:
     - ${REPOROOT}/googleapis/google/monitoring/v3
   service_yaml:
-    - ${REPOROOT}/googleapis/google/monitoring/v3/monitoring.yaml
+    - ${REPOROOT}/googleapis/google/monitoring/monitoring.yaml
   gapic_api_yaml:
     - ${REPOROOT}/googleapis/google/monitoring/v3/monitoring_gapic.yaml
   auto_merge: true
