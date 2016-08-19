@@ -1,11 +1,11 @@
 common:
-  api_name: pubsub-v1
+  api_name: google-pubsub-v1
   import_proto_path:
     - ${REPOROOT}/googleapis
   src_proto_path:
     - ${REPOROOT}/googleapis/google/pubsub/v1
   service_yaml:
-    - ${REPOROOT}/googleapis/google/pubsub/v1/pubsub.yaml
+    - ${REPOROOT}/googleapis/google/pubsub/pubsub.yaml
   gapic_api_yaml:
     - ${REPOROOT}/googleapis/google/pubsub/v1/pubsub_gapic.yaml
   auto_merge: true
@@ -23,4 +23,6 @@ csharp:
 php:
   final_repo_dir: ${REPOROOT}/artman/output/gcloud-php-pubsub
 ruby:
-  final_repo_dir: ${REPOROOT}/artman/output/gcloud-ruby-pubsub
+  final_repo_dir: ${REPOROOT}/gcloud-ruby/google-cloud-pubsub
+nodejs:
+  final_repo_dir: ${REPOROOT}/gcloud-node/packages/pubsub

@@ -1,18 +1,22 @@
 common:
-  api_name: devtools-cloudtrace-v1
+  api_name: google-devtools-cloudtrace-v1
   import_proto_path:
     - ${REPOROOT}/googleapis
   src_proto_path:
     - ${REPOROOT}/googleapis/google/devtools/cloudtrace/v1
   service_yaml:
-    - ${REPOROOT}/googleapis/google/devtools/cloudtrace/v1/trace.yaml
+    - ${REPOROOT}/googleapis/google/devtools/cloudtrace/trace.yaml
   gapic_api_yaml:
     - ${REPOROOT}/googleapis/google/devtools/cloudtrace/v1/trace_gapic.yaml
   auto_merge: true
   auto_resolve: true
   ignore_base: false
   output_dir: ${REPOROOT}/artman/output
+java:
+  final_repo_dir: ${REPOROOT}/artman/output/gcloud-java-cloudtrace
 python:
   final_repo_dir: ${REPOROOT}/artman/output/gcloud-python-cloudtrace
 ruby:
   final_repo_dir: ${REPOROOT}/artman/output/gcloud-ruby-cloudtrace
+nodejs:
+  final_repo_dir: ${REPOROOT}/artman/output/gcloud-node-cloudtrace

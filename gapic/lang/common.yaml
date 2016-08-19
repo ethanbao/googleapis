@@ -1,4 +1,4 @@
-default:
+common:
   toolkit_path: ${THISDIR}/../../../toolkit
 java:
   gapic_language_yaml:
@@ -18,3 +18,6 @@ php:
 ruby:
   gapic_language_yaml:
     - ${REPOROOT}/googleapis/gapic/lang/ruby_gapic.yaml
+nodejs:
+  gapic_language_yaml:
+    - ${REPOROOT}/googleapis/gapic/lang/nodejs_gapic.yaml

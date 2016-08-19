@@ -1,24 +1,17 @@
 common:
-  api_name: logging-v2
+  api_name: google-logging-v2
   import_proto_path:
     - ${REPOROOT}/googleapis
   src_proto_path:
     - ${REPOROOT}/googleapis/google/logging/v2
   service_yaml:
-    - ${REPOROOT}/googleapis/google/logging/v2/logging.yaml
+    - ${REPOROOT}/googleapis/google/logging/logging.yaml
   auto_merge: true
   auto_resolve: true
   ignore_base: false
   output_dir: ${REPOROOT}/artman/output
   gapic_api_yaml:
     - ${REPOROOT}/googleapis/google/logging/v2/logging_gapic.yaml
-type:
-  api_name: logging-type
-  import_proto_path:
-    - ${REPOROOT}/googleapis
-  src_proto_path:
-    - ${REPOROOT}/googleapis/google/logging/type
-  output_dir: ${REPOROOT}/artman/output
 java:
   final_repo_dir: ${REPOROOT}/gcloud-java/gcloud-java-logging
 python:
@@ -28,4 +21,8 @@ go:
 csharp:
   final_repo_dir: ${REPOROOT}/artman/output/gcloud-csharp-logging
 ruby:
-  final_repo_dir: ${REPOROOT}/artman/output/gcloud-ruby-logging
+  final_repo_dir: ${REPOROOT}/gcloud-ruby/google-cloud-logging
+php:
+  final_repo_dir: ${REPOROOT}/artman/output/gcloud-php-logging
+nodejs:
+  final_repo_dir: ${REPOROOT}/gcloud-node/packages/logging
